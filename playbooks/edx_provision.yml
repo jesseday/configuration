@@ -60,7 +60,7 @@
     - name: Wait for cloud-init to finish
       wait_for:
         path: /var/log/cloud-init.log
-        timeout: 60
+        timeout: 660
         search_regex: "final-message"
     - name: gather_facts
       setup: ""
